@@ -39,3 +39,16 @@ body {
   box-shadow: none;
   transform: translateY(3px);
 }
+
+.boxes {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: yellow;
+  height: 125px;
+  width: 125px;
+}
