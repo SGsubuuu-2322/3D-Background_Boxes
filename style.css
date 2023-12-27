@@ -15,3 +15,27 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.magic {
+  background-color: #f9ca24;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 20px;
+  position: fixed;
+  top: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px rgba(249, 202, 36, 0.4);
+  z-index: 100;
+}
+
+.magic:focus {
+  outline: 0;
+}
+
+.magic:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
