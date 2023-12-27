@@ -54,6 +54,7 @@ body {
   background-image: url("https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif");
   background-repeat: no-repeat;
   background-size: 500px 500px;
+  position: relative;
   height: 125px;
   width: 125px;
   transition: 0.4s ease;
@@ -66,4 +67,25 @@ body {
 .boxes.big {
   height: 600px;
   width: 600px;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  background-color: #f6e58d;
+  height: 100%;
+  width: 15px;
+  top: 8px;
+  right: -15px;
+  transform: skewY(45deg);
+}
+.box::before {
+  content: "";
+  position: absolute;
+  background-color: #f9ca24;
+  height: 15px;
+  width: 100%;
+  bottom: -15px;
+  left: 8px;
+  transform: skewX(45deg);
 }
